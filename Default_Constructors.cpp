@@ -13,6 +13,7 @@ public:
     }
     void display() {
         cout << "Addition result is: " << a + b << endl;
+        cout << "Multiplication result is: " << a * b << endl;
     }
 };
 
@@ -23,4 +24,6 @@ int main() {
     return 0;
 }
 //Output
-/*Addition result is: 30*/
+/*Addition result is: 30
+Multiplication result is: 200
+*/    
