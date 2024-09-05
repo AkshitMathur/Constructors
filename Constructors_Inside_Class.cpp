@@ -1,5 +1,5 @@
 //23070123014 Akshit Mathur
-//Aim:Implemention of Constructors and Destructors to Define Constructor Inside Class
+//Aim:Implemention of Constructors and Destructors to Define Constructor Inside Class.
 #include <iostream>
 using namespace std;
 
