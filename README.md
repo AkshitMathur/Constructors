@@ -1,2 +1,110 @@
 # Constructors
 Experiment_12
+
+## Contents
+- [Aim](#aim)
+- [Software Used](#software-used)
+- [Theory](#theory)
+  * [Definition](#Definition)
+  * [Properties](#Properties-of-Constructors)
+  * [Advantages](#Advantages-of-Constructors)
+  * [Types](#Types-of-Constructors)
+- [Algorithms](#algorithms)
+- [Conclusion](#conclusion)
+
+## Aim: 
+To Study and Implement Constructors and Deconstructors
+
+## Software Used:
+VS Code , Dev C++
+
+## Theory:
+### Constructors Defination:
+Constructor in C++ is a special method that is invoked automatically at the time an object of a class is created. It is used to initialize the data members of new objects generally. The constructor in C++ has the same name as the class or structure. It constructs the values i.e. provides data for the object which is why it is known as a constructor.
+
+## Syntax of Constructors in C++
+The prototype of the constructor looks like this:
+<class-name> (){
+...
+}
+### Properties of Constructors:
+ - The name of the constructor is the same as its class name.
+ - Constructors are mostly declared in the public section of the class though they can be declared in the private section of the class.
+ - Constructors do not return values; hence they do not have a return type.
+ - A constructor gets called automatically when we create the object of the class.
+ - You can overload constructors in a class, meaning you can have multiple constructors with different parameter lists.
+ - If no constructor is explicitly defined, the compiler provides a default constructor that initializes data members to default values.
+ - A special constructor that initializes an object using another object of the same class. It is often used for deep copying.
+ - Constructors can take parameters to initialize objects with specific values.
+
+### Advantages of Constructors:
+ 1.Automatic Initialization: Constructors ensure that an object is initialized to a valid state when it is created. This reduces the chances of encountering uninitialized data.
+ 2.Encapsulation of Initialization Logic: They encapsulate the logic required to set up an object, making the code cleaner and more maintainable.
+ 3.Support for Overloading: By allowing multiple constructors with different parameter lists, constructors provide flexibility in object creation.
+ 4.Initialization of Complex Objects: Constructors can be used to initialize complex objects, including those involving dynamic memory allocation.
+ 5.Consistency: Using constructors helps maintain consistency in object initialization. It ensures that every object of a class starts life in a well-defined state.
+ 6.Resource Management: Constructors can handle resource allocation, such as memory or file handles, ensuring that resources are properly allocated when an object is created.
+ 7.Compatibility with Class Hierarchies: Constructors support initialization in class hierarchies. Base class constructors are called before derived class constructors, allowing for proper setup of inherited 
+   properties.
+ 8.Avoiding Redundant Code: They help avoid redundant initialization code by centralizing it in the constructor rather than spreading initialization code across various parts of the program.
+ 
+## Types of Constructors:
+## 1. Default Constructor
+A default constructor is a constructor that doesn’t take any argument. It has no parameters. It is also called a zero-argument constructor.
+
+Syntax of Default Constructor
+
+className() {
+    // body_of_constructor
+}
+The compiler automatically creates an implicit default constructor if the programmer does not define one.
+
+## 2. Parameterized Constructor
+Parameterized constructors make it possible to pass arguments to constructors. Typically, these arguments help initialize an object when it is created. To create a parameterized constructor, simply add parameters to it the way you would to any other function. When you define the constructor’s body, use the parameters to initialize the object.
+
+Syntax of Parameterized Constructor
+
+className (parameters...) {
+      // body
+}
+If we want to initialize the data members, we can also use the initializer list as shown:
+
+MyClass::MyClass(int val) : memberVar(val) {};
+
+## 3. Copy Constructor
+A copy constructor is a member function that initializes an object using another object of the same class.
+
+Syntax of Copy Constructor
+
+Copy constructor takes a reference to an object of the same class as an argument.
+
+ClassName (ClassName &obj)
+{
+  // body_containing_logic
+}
+Just like the default constructor, the C++ compiler also provides an implicit copy constructor if the explicit copy constructor definition is not present.
+
+Here, it is to be noted that, unlike the default constructor where the presence of any type of explicit constructor results in the deletion of the implicit default constructor, the implicit copy constructor will always be created by the compiler if there is no explicit copy constructor or explicit move constructor is present.
+
+## 1. Defining the Constructor Within the Class
+<class-name> (list-of-parameters) {
+     // constructor definition
+}
+## 2. Defining the Constructor Outside the Class
+<class-name> {
+
+    // Declaring the constructor
+    // Definiton will be provided outside
+    <class-name>();
+
+    // Defining remaining class
+}
+
+<class-name>: :<class-name>(list-of-parameters) {
+      // constructor definition 
+}
+
+## Algorithms
+
+## Conclusion
+We learnt to use the concepts of Class and Objects.
