@@ -144,5 +144,26 @@ Main Function (main())
  - This method displays the values of rno, name, and fee that were initialized by the constructor.
 7. **End**
 
+## Parameterized Constructor:
+1. **Start**
+2. Define Construct Class
+    - Declare private members:
+    - int a (An integer variable)
+    - int b (Another integer variable)
+    - Define public members:
+3. Constructor Construct(int m, int n)
+    - Initialize a with the value m.
+    - Initialize b with the value n.
+4. Method display()
+    - Print the values of a and b.
+Main Function (main())
+
+5. Create an object myconstruct of class Construct with arguments 10 and 20
+    - The constructor Construct(int m, int n) is called with m = 10 and n = 20.
+    - This initializes a to 10 and b to 20.
+6. Call myconstruct.display()
+    - This method prints the values of a and b.
+7. **End**
+
 ## Conclusion
 We learnt to use the concepts of Class and Objects.
