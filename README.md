@@ -122,7 +122,27 @@ Main Function (main())
 6. Call mydate.display()
  - This displays the date initialized in the constructor.
 7. **End**
-   
+
+## Constructors ouside class
+1. **Start**
+2. Define Student Class
+    - Declare private members:
+    - int rno (Roll number)
+    - char name[50] (Name)
+    - double fee (Fee)
+    - Define public members:
+3.Constructor Student()
+  - Prompt the user to enter rno, name, and fee.
+  - Read the values from user input.
+4. Method display()
+  - Print the rno, name, and fee.
+Main Function (main())
+5. Create an object s of class Student
+ - The constructor Student() is called automatically.
+ - The constructor prompts the user for input and initializes the object with these values.
+6. Call s.display()
+ - This method displays the values of rno, name, and fee that were initialized by the constructor.
+7. **End**
 
 ## Conclusion
 We learnt to use the concepts of Class and Objects.
