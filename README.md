@@ -165,5 +165,32 @@ Main Function (main())
     - This method prints the values of a and b.
 7. **End**
 
+## Copy Constructor:
+1. **Start**
+2. Define Wall Class
+    - Declare private members:
+    - double length (Length of the wall)
+    - double height (Height of the wall)
+    - Define public members:
+3. Constructor Wall(double len, double hgt)
+    - Initialize length with len.
+    - Initialize height with hgt.
+4. Copy Constructor Wall(const Wall& obj)
+    - Initialize length with obj.length.
+    - Initialize height with obj.height.
+5. Method calculateArea() const
+    - Calculate and return the area of the wall as length * height.
+Main Function (main())
+
+6. Create an object wall1 of class Wall with 10.5 and 8.6 as arguments.
+   - The constructor Wall(double len, double hgt) initializes length to 10.5 and height to 8.6.
+   - Create another object wall2 using the copy constructor by copying wall1.
+   - The copy constructor initializes wall2 with the same length and height as wall1.
+7.Call wall1.calculateArea()
+ - This calculates and prints the area of wall1.
+ - Call wall2.calculateArea()
+ - This calculates and prints the area of wall2, which should be the same as wall1.
+8. **End**
+
 ## Conclusion
 We learnt to use the concepts of Class and Objects.
