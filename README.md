@@ -51,8 +51,7 @@ The prototype of the constructor looks like this:
 ## Types of Constructors:
 ## 1. Default Constructor
 A default constructor is a constructor that doesn’t take any argument. It has no parameters. It is also called a zero-argument constructor.
-
-Syntax of Default Constructor
+## Syntax of Default Constructor
 
 className() {
     // body_of_constructor
@@ -61,8 +60,7 @@ The compiler automatically creates an implicit default constructor if the progra
 
 ## 2. Parameterized Constructor
 Parameterized constructors make it possible to pass arguments to constructors. Typically, these arguments help initialize an object when it is created. To create a parameterized constructor, simply add parameters to it the way you would to any other function. When you define the constructor’s body, use the parameters to initialize the object.
-
-Syntax of Parameterized Constructor
+## Syntax of Parameterized Constructor
 
 className (parameters...) {
       // body
@@ -73,8 +71,7 @@ MyClass::MyClass(int val) : memberVar(val) {};
 
 ## 3. Copy Constructor
 A copy constructor is a member function that initializes an object using another object of the same class.
-
-Syntax of Copy Constructor
+## Syntax of Copy Constructor
 
 Copy constructor takes a reference to an object of the same class as an argument.
 
@@ -82,6 +79,7 @@ ClassName (ClassName &obj)
 {
   // body_containing_logic
 }
+
 Just like the default constructor, the C++ compiler also provides an implicit copy constructor if the explicit copy constructor definition is not present.
 
 Here, it is to be noted that, unlike the default constructor where the presence of any type of explicit constructor results in the deletion of the implicit default constructor, the implicit copy constructor will always be created by the compiler if there is no explicit copy constructor or explicit move constructor is present.
