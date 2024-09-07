@@ -193,7 +193,6 @@ Main Function (main())
 8. **End**
 
 ### Algorithm for Construct Class Program
-
 1. **Start**
 2. **Define `Construct` Class**
    - **Declare private members:**
@@ -206,15 +205,39 @@ Main Function (main())
      - **Method `display()`**
        - Calculate the sum of `a` and `b`.
        - Print the result as "Addition result is: " followed by the calculated sum.
-
 3. **Main Function (`main()`)**
    - **Create an object `myconstruct` of class `Construct`**
      - The default constructor `Construct()` is called.
      - This initializes `a` to `10` and `b` to `20`.
    - **Call `myconstruct.display()`**
      - This method calculates the sum of `a` and `b` and prints "Addition result is: 30".
-   - **End**
+4. **End**
 
+### Algorithm for Student Class with Object Count
+1. **Start**
+
+2. **Global Variable Declaration:**
+   - Declare a global integer variable `count` initialized to `0`.
+     - This variable keeps track of the number of `Student` objects currently active.
+
+3. **Define `Student` Class**
+   - **Constructor `Student()`**
+     - Increment the `count` variable by 1.
+     - Print the current number of objects created.
+   - **Destructor `~Student()`**
+     - Decrement the `count` variable by 1.
+     - Print the current number of objects destroyed.
+
+4. **Main Function (`main()`)**
+   - **Create objects `aa`, `bb`, and `cc`** of class `Student`
+     - Each object creation calls the `Student()` constructor.
+     - The constructor prints the number of objects created after each object is created.
+   - **Create a block of code:**
+     - Within this block, create an object `dd` of class `Student`.
+       - This calls the `Student()` constructor, incrementing the `count`.
+     - When the block ends, `dd` goes out of scope.
+       - The `Student()` destructor is called for `dd`, decrementing the `count`.
+5. **End**
 
 ## Conclusion
-We learnt to use the concepts of Class and Objects.
+We learnt to use the concepts of Constructors and Deconstructors.
