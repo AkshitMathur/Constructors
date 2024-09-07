@@ -38,15 +38,15 @@ The prototype of the constructor looks like this:
  - Constructors can take parameters to initialize objects with specific values.
 
 ### Advantages of Constructors:
- 1.Automatic Initialization: Constructors ensure that an object is initialized to a valid state when it is created. This reduces the chances of encountering uninitialized data.
- 2.Encapsulation of Initialization Logic: They encapsulate the logic required to set up an object, making the code cleaner and more maintainable.
- 3.Support for Overloading: By allowing multiple constructors with different parameter lists, constructors provide flexibility in object creation.
- 4.Initialization of Complex Objects: Constructors can be used to initialize complex objects, including those involving dynamic memory allocation.
- 5.Consistency: Using constructors helps maintain consistency in object initialization. It ensures that every object of a class starts life in a well-defined state.
- 6.Resource Management: Constructors can handle resource allocation, such as memory or file handles, ensuring that resources are properly allocated when an object is created.
- 7.Compatibility with Class Hierarchies: Constructors support initialization in class hierarchies. Base class constructors are called before derived class constructors, allowing for proper setup of inherited 
-   properties.
- 8.Avoiding Redundant Code: They help avoid redundant initialization code by centralizing it in the constructor rather than spreading initialization code across various parts of the program.
+  - Automatic Initialization: Constructors ensure that an object is initialized to a valid state when it is created. This reduces the chances of encountering uninitialized data.
+  - Encapsulation of Initialization Logic: They encapsulate the logic required to set up an object, making the code cleaner and more maintainable.
+  - Support for Overloading: By allowing multiple constructors with different parameter lists, constructors provide flexibility in object creation.
+  - Initialization of Complex Objects: Constructors can be used to initialize complex objects, including those involving dynamic memory allocation.
+  - Consistency: Using constructors helps maintain consistency in object initialization. It ensures that every object of a class starts life in a well-defined state.
+  - Resource Management: Constructors can handle resource allocation, such as memory or file handles, ensuring that resources are properly allocated when an object is created.
+  - Compatibility with Class Hierarchies: Constructors support initialization in class hierarchies. Base class constructors are called before derived class constructors, allowing for proper setup of inherited 
+    properties.
+  - Avoiding Redundant Code: They help avoid redundant initialization code by centralizing it in the constructor rather than spreading initialization code across various parts of the program.
  
 ## Types of Constructors:
 ## 1. Default Constructor
