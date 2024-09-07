@@ -102,7 +102,27 @@ Here, it is to be noted that, unlike the default constructor where the presence 
       // constructor definition 
 }
 
-## Algorithms
+## Algorithm for Date Class Program
+ 1. **Start**
+ 2. Define date Class
+    - int d (Day)
+    - int m (Month)
+    - int y (Year)
+    - Define public members:
+3. Constructor date()
+    - Output: "Constructor called"
+    - Initialize d to 4
+    - Initialize m to 9
+    - Initialize y to 2024
+4. Method display()
+ - Output: "Today's date is: d/m/y" where d, m, and y are the values of day, month, and year.
+Main Function (main())
+5. Create an object mydate of class date
+ - The constructor date() is automatically called.
+6. Call mydate.display()
+ - This displays the date initialized in the constructor.
+7. **End**
+   
 
 ## Conclusion
 We learnt to use the concepts of Class and Objects.
