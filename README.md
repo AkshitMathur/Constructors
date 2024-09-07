@@ -192,5 +192,29 @@ Main Function (main())
  - This calculates and prints the area of wall2, which should be the same as wall1.
 8. **End**
 
+### Algorithm for Construct Class Program
+
+1. **Start**
+2. **Define `Construct` Class**
+   - **Declare private members:**
+     - `int a` (An integer variable)
+     - `int b` (Another integer variable)
+   - **Define public members:**
+     - **Default Constructor `Construct()`**
+       - Initialize `a` with `10`.
+       - Initialize `b` with `20`.
+     - **Method `display()`**
+       - Calculate the sum of `a` and `b`.
+       - Print the result as "Addition result is: " followed by the calculated sum.
+
+3. **Main Function (`main()`)**
+   - **Create an object `myconstruct` of class `Construct`**
+     - The default constructor `Construct()` is called.
+     - This initializes `a` to `10` and `b` to `20`.
+   - **Call `myconstruct.display()`**
+     - This method calculates the sum of `a` and `b` and prints "Addition result is: 30".
+   - **End**
+
+
 ## Conclusion
 We learnt to use the concepts of Class and Objects.
